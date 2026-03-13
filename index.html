@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arnoldnakamura | XMR/EUR P2P Trading</title>
+  <meta name="description" content="Monero (XMR) to EUR peer-to-peer trading. Cash by Mail EU-wide and Face-to-Face in Southwest Germany. 683 trades, 100% feedback.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #222;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ff6600;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #888;
+    }
+    .badge {
+      display: inline-block;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: 13px;
+      color: #aaa;
+      margin-top: 12px;
+    }
+    .badge strong { color: #4caf50; }
+    section {
+      margin-bottom: 36px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ccc;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 14px;
+    }
+    .service-card {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 12px;
+    }
+    .service-card h3 {
+      font-size: 18px;
+      color: #ff6600;
+      margin-bottom: 8px;
+    }
+    .service-card .region {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+    .service-card .price {
+      color: #4caf50;
+      font-weight: 600;
+    }
+    .features {
+      list-style: none;
+      margin-top: 12px;
+    }
+    .features li {
+      padding: 4px 0;
+      color: #bbb;
+      font-size: 14px;
+    }
+    .features li::before {
+      content: "\2713 ";
+      color: #4caf50;
+      font-weight: bold;
+    }
+    .contact-grid {
+      display: grid;
+      gap: 8px;
+    }
+    .contact-item {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 6px;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .contact-item .label {
+      color: #888;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .contact-item .value {
+      color: #e0e0e0;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 14px;
+      word-break: break-all;
+    }
+    .contact-item .value a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+    .contact-item .value a:hover { text-decoration: underline; }
+    .reputation {
+      background: #111;
+      border: 1px solid #222;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .rep-stats {
+      display: flex;
+      gap: 32px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .rep-stat {
+      text-align: center;
+    }
+    .rep-stat .number {
+      font-size: 28px;
+      font-weight: 700;
+      color: #ff6600;
+    }
+    .rep-stat .label {
+      font-size: 12px;
+      color: #888;
+      text-transform: uppercase;
+    }
+    .rep-note {
+      font-size: 13px;
+      color: #888;
+      margin-top: 12px;
+    }
+    .rep-note a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+    .platforms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .platform-tag {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 4px;
+      padding: 4px 10px;
+      font-size: 12px;
+      color: #aaa;
+    }
+    .platform-tag a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    .platform-tag a:hover { color: #ff6600; }
+    .escrow-note {
+      background: #0d1f0d;
+      border: 1px solid #1a3a1a;
+      border-radius: 6px;
+      padding: 14px 16px;
+      font-size: 14px;
+      color: #8bc34a;
+      margin-top: 16px;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid #222;
+      text-align: center;
+      font-size: 12px;
+      color: #555;
+    }
+    @media (max-width: 480px) {
+      .rep-stats { gap: 16px; }
+      .contact-item { flex-direction: column; align-items: flex-start; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>arnoldnakamura</h1>
+      <div class="subtitle">Monero (XMR) / EUR Peer-to-Peer Trading</div>
+      <div class="badge"><strong>683</strong> trades &middot; <strong>454</strong> partners &middot; <strong>100%</strong> feedback</div>
+    </header>
+
+    <section>
+      <h2>Services</h2>
+      <div class="service-card">
+        <h3>Cash by Mail</h3>
+        <div class="region">EU-wide &mdash; any amount</div>
+        <div class="price">10% over market price, both directions</div>
+        <ul class="features">
+          <li>Buy XMR with EUR cash sent via registered mail</li>
+          <li>Sell XMR and receive EUR cash via registered mail</li>
+          <li>Escrow available via Haveno multisig or XMRBazaar</li>
+          <li>All EU countries accepted</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Face-to-Face</h3>
+        <div class="region">Southwest Germany &amp; Rhine-Main: Frankfurt, Stuttgart, Mannheim, Heidelberg, Karlsruhe, Freiburg, Strasbourg (FR)</div>
+        <div class="price">10% over market price, both directions</div>
+        <ul class="features">
+          <li>In-person cash exchange for XMR</li>
+          <li>Public meeting points</li>
+          <li>Escrow available via Haveno multisig</li>
+        </ul>
+      </div>
+      <div class="escrow-note">
+        Escrow available on request. Trades can be secured with 2-of-3 multisig escrow via Haveno (RetoSwap, DawnSwap) or XMRBazaar. Contact to arrange.
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <span class="label">Telegram</span>
+          <span class="value"><a href="https://t.me/arnoldnakamura" target="_blank">@arnoldnakamura</a></span>
+        </div>
+        <div class="contact-item">
+          <span class="label">Signal</span>
+          <span class="value">+7578818677</span>
+        </div>
+        <div class="contact-item">
+          <span class="label">Session</span>
+          <span class="value" style="font-size:11px">05397126c9423ff4149ba1ec6ba08b24481382b7dc1df94c18c6d4a07c62ccc71e</span>
+        </div>
+        <div class="contact-item">
+          <span class="label">Matrix</span>
+          <span class="value">@arnoldnakamura:3dns.eu</span>
+        </div>
+        <div class="contact-item">
+          <span class="label">Nostr</span>
+          <span class="value" style="font-size:11px">npub14h8fl9ev8h082hjmtaz4d7zc5rm4q8jg04kp5rvysrev3s70yx7q7662da</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Reputation</h2>
+      <div class="reputation">
+        <div class="rep-stats">
+          <div class="rep-stat">
+            <div class="number">683</div>
+            <div class="label">Trades</div>
+          </div>
+          <div class="rep-stat">
+            <div class="number">454</div>
+            <div class="label">Partners</div>
+          </div>
+          <div class="rep-stat">
+            <div class="number">100%</div>
+            <div class="label">Feedback</div>
+          </div>
+          <div class="rep-stat">
+            <div class="number">~10 min</div>
+            <div class="label">Avg. Finalization</div>
+          </div>
+        </div>
+        <div class="rep-note">
+          Previously <strong>chingchongfalung</strong> on LocalMonero and AgoraDesk. Independently verifiable via the Wayback Machine:
+          <br><a href="https://web.archive.org/web/20240421/https://agoradesk.com/user/chingchongfalung" target="_blank">AgoraDesk profile (Apr 2024)</a>
+          &middot; <a href="https://web.archive.org/web/20231101/https://localmonero.co/user/chingchongfalung" target="_blank">LocalMonero profile (Nov 2023)</a>
+        </div>
+        <div class="platforms">
+          <span class="platform-tag"><a href="https://xmrbazaar.com/listing/8qww/" target="_blank">XMRBazaar</a></span>
+          <span class="platform-tag">RetoSwap (Haveno)</span>
+          <span class="platform-tag">DawnSwap (Haveno)</span>
+          <span class="platform-tag"><a href="https://monero.forum/classifieds/ad/xmr-eur-cash-mail-eu-wide-face-face-southwest-germany" target="_blank">monero.forum</a></span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How It Works</h2>
+      <div class="service-card">
+        <ol style="padding-left: 20px; color: #bbb; font-size: 14px;">
+          <li style="margin-bottom: 8px;"><strong style="color:#e0e0e0">Contact me</strong> via Telegram, Signal, or Session. Tell me the amount and direction (buy or sell XMR).</li>
+          <li style="margin-bottom: 8px;"><strong style="color:#e0e0e0">We agree on terms</strong> &mdash; amount, price, payment method, and whether to use escrow.</li>
+          <li style="margin-bottom: 8px;"><strong style="color:#e0e0e0">Execute the trade</strong> &mdash; for escrow trades, funds lock in Haveno 2-of-3 multisig. For direct trades, we exchange simultaneously.</li>
+          <li><strong style="color:#e0e0e0">Done</strong> &mdash; both parties confirm, escrow releases. Fast, private, no KYC.</li>
+        </ol>
+      </div>
+    </section>
+
+    <footer>
+      Monero is private, decentralized digital cash. This page accepts XMR.
+      <br>Last updated: March 2026
+    </footer>
+  </div>
+</body>
+</html>
