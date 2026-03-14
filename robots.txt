@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imoutonokoibito.github.io/arnoldnakamura/sitemap.xml
